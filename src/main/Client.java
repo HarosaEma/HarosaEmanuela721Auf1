@@ -8,7 +8,7 @@ public class Client {
     private int Incomes;
     private String Location;
 
-    public Client(int Id, CompanySize companySize, int NrEmpl, int Incomes, String Location)
+    public Client(int Id, String attribute, CompanySize companySize, int NrEmpl, int Incomes, String Location)
     {
         this.Id = Id;
         this.companySize = companySize;
@@ -16,6 +16,7 @@ public class Client {
         this.Incomes = Incomes;
         this.Location = Location;
     }
+
 
     @Override
     public String toString() {
