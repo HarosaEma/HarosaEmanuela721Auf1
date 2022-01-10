@@ -13,7 +13,7 @@ public class Service {
      */
     public List<Client> sortListeClientByNrEmpl(List<Client> liste) {
         return liste.stream()
-                .sorted((client, otherClient) -> client.getNrEmpl().compareTo(otherClient.getNrEmpl()))
+                .sorted((client, otherClient) -> -client.getNrEmpl()+otherClient.getNrEmpl())
                 .collect(Collectors.toList());
     }
 
